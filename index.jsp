@@ -4,7 +4,38 @@
     HelloWorld h = new HelloWorld();
 %>
 <html>
-<body>
-    message = <%=h.hello() %>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<title>Welcome!</title>
+</head>
+<body>	<%-- JSP 주석 처리 --%>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./index.jsp">Home</a>
+            </div>
+        </div>
+    </nav>
+    <%--CLASS는 스타일 적용시에 적용되는 이름 중복가능--%>
+<%! String greeting = "Welcome to Web Shopping Mall";
+    String tagline = "Welcome to Web Market!";%>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">
+                <%=greeting%>
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-container">
+            <h3>
+                <%=tagline%>
+            </h3>
+        </div>
+        <hr>
+    </div>
+    <footer class="container">
+        <p>&copy;WebMarket</p>
+    </footer>
 </body>	
 </html>
