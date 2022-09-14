@@ -4,7 +4,7 @@
     HelloWorld h = new HelloWorld();
 %>
 <%@ page import="java.util.Date"%>
-
+<%@ page buffer="1kb" autoFlush="true"%>
 
 <html>
 <head>
@@ -14,11 +14,16 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <title>Welcome! 개인 쇼핑몰 사이트입니다.</title>
+<script>
+    window.open("popup/popup1.jsp","popup","width=365, height=250, left=0, top=0")
+</script>
 </head>
 <body>	<%-- JSP 주석 처리 --%>
     <%@ include file = "top_banner.jsp"%>
     <%@ include file = "top_menu.jsp"%>
     <%@ include file = "body_main.jsp"%>
     <%@ include file = "footer.jsp"%>
+현재 페이지 퍼버 용량: <%= out.getBufferSize() %> <br>
+남은 페이지 버퍼 용량: <%= out.getRemaining() %>
 </body>	
 </html>
