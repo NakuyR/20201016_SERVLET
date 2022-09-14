@@ -17,9 +17,16 @@
         <hr>
     </div>
     <div class="card bg-dark text-white">
-        <img src="#" class="card-img" alt="...">
+        <img src="image/event.jpg" class="card-img" alt="이벤트">
         <div class="card-img-overlay">
-        	<h5 class="card-title">그래픽카드 이벤트</h5>
-        	<p class="card-text">출처:다나와</p>
+        	<h5 class="card-title">모니터 이벤트</h5>
+        	<p class="card-text">출처:조이젠</p>
         </div>
 	</div>
+	<div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">60Hz 모니터</a>
+        <a href="#" class="list-group-tiem list-group-item-action">144Hz 모니터</a>
+        <a href="#" class="list-group-tiem list-group-item-action">165Hz 모니터</a>
+        <a href="#" class="list-group-tiem list-group-item-action">240Hz 모니터</a>
+        
+</div>

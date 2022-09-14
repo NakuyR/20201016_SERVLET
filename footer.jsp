@@ -1,6 +1,6 @@
 <%@ page contentType = "text/html;charset=utf-8" %>
 <footer class="container">
-    <p>&copy;WebMarket</p>
+    <p>&copy;쇼핑몰대표:정도훈 고유번호:20201016 연락처:jdh1669@sungkyul.ac.kr</p>
     <%
    		Date day = new java.util.Date();
     	String am_pm;
