@@ -5,3 +5,6 @@
 ### [index.jsp : 이벤트 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/index.jsp)
 ### [popup1.jsp : 팝업 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/popup/popup1.jsp)
 ### [popup2.jsp : 팝업 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/popup/popup2.jsp)
+### 2022년 9월21일 쇼핑몰 상품 목록 페이지 추가
+### [Product.java : 함수 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/WEB-INF/src/dto/Product.java)
+### [ProductRepository.java : 상품 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/WEB-INF/src/dao/ProductRepository.java)

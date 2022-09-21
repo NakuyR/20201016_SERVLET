@@ -1,13 +1,50 @@
 <%@ page contentType = "text/html;charset=utf-8" %>
-<%! String greeting = "꾸팡닷컴에 오신것을 환영합니다.";
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="dto.Product"%>
+<jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session"/>
+<%! String greeting = "현재 페이지는 컴퓨터 주요 부품 상품 목록입니다.";
     String tagline = "하단페이지:확인";%>
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3">
+            <h3 class="display-4">
                 <%=greeting%>
-            </h1>
+            </h3>
         </div>
     </div>
+<%
+    ArrayList<Product> listOfProducts = productDAO.getAllProducts();
+%>
+    <div class="container">
+        <div class="row" align="center">
+            <%
+            	for(int i = 0; i<listOfProducts.size();i++){
+                    Product product = listOfProducts.get(i);
+            %>
+            <div class="col-md-4">
+                <div class="card bg-dark text-white">
+                    <img src="image/product/<%=product.getProductId()%>.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                    <h5 class="card-title">제품 이미지 샘플</h5>
+                    <p class="card-text">출처 : 구글 검색</p>
+                    </div>
+                </div>
+
+                <h3>
+                    <%=product.getPname()%>
+                </h3>
+                <p>
+                    <%=product.getDescription()%>
+                </p>
+                <p>
+                    <%=product.getUnitPrice()%>원
+                </p>
+            </div>
+            <%
+            	}
+            %>
+        </div>
+        <
+	</div>
     <div class="container">
         <div class="text-container">
             <h3>
