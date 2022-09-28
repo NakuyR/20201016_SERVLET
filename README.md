@@ -8,3 +8,5 @@
 ### 2022년 9월21일 쇼핑몰 상품 목록 페이지 추가
 ### [Product.java : 함수 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/WEB-INF/src/dto/Product.java)
 ### [ProductRepository.java : 상품 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/WEB-INF/src/dao/ProductRepository.java)
+### 2022년 9월28일 제품 상세 페이지 추가
+### [product_detail.jsp : 제품 상세 페이지추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/product_detail.jsp)

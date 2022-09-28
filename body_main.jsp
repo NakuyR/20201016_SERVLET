@@ -38,12 +38,14 @@
                 <p>
                     <%=product.getUnitPrice()%>원
                 </p>
+                <p>
+                    <a href="product_detail.jsp?id=<%=product.getProductId()%>" class="btn btn-secondary" role="button"> 상품 상세 정보 &raquo;</a>
+                </p>
             </div>
             <%
             	}
             %>
         </div>
-        <
 	</div>
     <div class="container">
         <div class="text-container">
