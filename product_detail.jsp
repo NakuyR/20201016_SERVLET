@@ -3,7 +3,8 @@
 <%@ page import="java.util.Date"%>
 <%@ page import="example.*"%>
 <%@ page errorPage="exception/product_not_found.jsp"%>
-<jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
+<%@ page import="dao.ProductRepository"%>
+
 <html>
 <head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -24,7 +25,8 @@
     </div>
     <%
     	String id = request.getParameter("id");
-    	Product product = productDAO.getProductById(id);
+    	ProductRepository dao = ProductRepository.getInstance();
+    	Product product = dao.getProductById(id);
     %>
     <div class="container">
         <div class="row">
@@ -37,7 +39,7 @@
                 <p><b>재고 수</b>: <%=product.getUnitsInStock()%></p>
                 <h4><%=product.getUnitPrice()%>원</h4>
                 <div class="card bg-dark text-white">
-        			<img src="image/product/<%=product.getProductId()%>.jpg" class="card-img" alt="...">
+        			<img src="../image/product/<%=product.getFilename()%>.jpg" class="card-img" alt="...">
         			<div class="card-img-overlay">
             			<h5 class="card-title">상품 이미지 원본</h5>
             			<p class="card-text">출처: 구글 검색</p>

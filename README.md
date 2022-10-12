@@ -12,3 +12,6 @@
 ### [product_detail.jsp : 제품 상세 페이지추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/product_detail.jsp)
 ### 2022년 10월5일 관리자 페이지 추가
 ### [index_ad.jsp : 관리자 페이지추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/admin/index_ad.jsp)
+### 2022년 10월12일 상품 이미지 업로드 기능 추가, 입력값 필터링 추가
+### [product_add.jsp : 상품 이미지 업로드 기능 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/admin/product_add.jsp)
+### [validation.js : 상품 업로드 입력값 필터링 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/js/validation.js)

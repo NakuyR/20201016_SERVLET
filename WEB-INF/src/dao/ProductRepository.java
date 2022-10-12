@@ -17,6 +17,7 @@ public class ProductRepository{
 		phone.setManufacturer("Apple");
 		phone.setUnitsInStock(1000);
 		phone.setCondition("New");
+        phone.setFilename("P1234.jpg");
 
         Product notebook = new Product("P1235", "LG PC 그램", 1500000);
 		notebook.setDescription("13.3-inch, IPS LED display, 5rd Generation Intel Core processors");
@@ -24,6 +25,7 @@ public class ProductRepository{
 		notebook.setManufacturer("LG");
 		notebook.setUnitsInStock(1000);
 		notebook.setCondition("Refurbished");
+        notebook.setFilename("P1235.jpg");
 
 		Product tablet = new Product("P1236", "Galaxy Tab S", 900000);
 		tablet.setDescription("212.8*125.6*6.6mm,  Super AMOLED display, Octa-Core processor");
@@ -31,6 +33,7 @@ public class ProductRepository{
 		tablet.setManufacturer("Samsung");
 		tablet.setUnitsInStock(1000);
 		tablet.setCondition("Old");
+        tablet.setFilename("P1236.jpg");
 
         Product GPU = new Product("P1237", "RTX3080Ti", 1400000);
         GPU.setDescription("8nm, PCIe 4.0, 1695MHz");
@@ -38,6 +41,7 @@ public class ProductRepository{
         GPU.setManufacturer("MSI");
         GPU.setUnitsInStock(123);
         GPU.setCondition("Mining Edition");
+        GPU.setFilename("P1237.jpg");
         
         Product CPU = new Product("P1238", "i7 12700K",600000);
         CPU.setDescription("10nm(인텔7) / 8+4코어 / 16+4쓰레드 / 기본 클럭: 3.6GHz / 최대 클럭: 5.0GH");
@@ -45,6 +49,7 @@ public class ProductRepository{
         CPU.setManufacturer("Intel");
         CPU.setUnitsInStock(1273);
         CPU.setCondition("New");
+        CPU.setFilename("P1238.jpg");
         
         Product RAM = new Product("P1239","G.SKILL DDR5-6000 CL36 16GB*2", 450000);
         RAM.setDescription("데스크탑용 / DDR5 / 6000MHz (PC5-48000)/16GB");
@@ -52,6 +57,7 @@ public class ProductRepository{
         RAM.setManufacturer("G.SKILL");
         RAM.setUnitsInStock(37);
         RAM.setCondition("New");
+        RAM.setFilename("P1239.jpg");
         
         Product SSD = new Product("P1240","삼성전자 870 EVO 4TB", 550000);
         SSD.setDescription("내장형 SSD/ 6.4cm(2.5형) / SATA3 (6Gb/s) / TLC(기타) / 3D낸드 / DDR4 4TB");
@@ -59,6 +65,7 @@ public class ProductRepository{
         SSD.setManufacturer("Samsung");
         SSD.setUnitsInStock(1442);
         SSD.setCondition("New");
+        SSD.setFilename("P1240.jpg");
             
         Product mainboard = new Product("P1241","ASUS PRIME H610M-K D4",100000);
         mainboard.setDescription("인텔(소켓1700) / 인텔 H610 / M-ATX (23.4x20.3cm)");
@@ -66,6 +73,7 @@ public class ProductRepository{
         mainboard.setManufacturer("ASUS");
         mainboard.setUnitsInStock(32);
         mainboard.setCondition("Refurbished");
+        mainboard.setFilename("P1241.jpg");
         
         Product cooler = new Product("P1242","NZXT KRAKEN X73",265000);
         cooler.setDescription("수랭/ 팬 크기: 120mm x3 / 26T / 4핀 / 베어링: FDB / 2000 RPM / 최대 풍량: 73.11 CFM / 최대 풍압: 2.93 mmH2O");
@@ -73,6 +81,7 @@ public class ProductRepository{
         cooler.setManufacturer("NZXT");
         cooler.setUnitsInStock(386);
         cooler.setCondition("New");
+        cooler.setFilename("P1242.jpg");
         
         listOfProducts.add(phone);
 		listOfProducts.add(notebook);
