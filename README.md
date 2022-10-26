@@ -15,3 +15,5 @@
 ### 2022년 10월12일 상품 이미지 업로드 기능 추가, 입력값 필터링 추가
 ### [product_add.jsp : 상품 이미지 업로드 기능 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/admin/product_add.jsp)
 ### [validation.js : 상품 업로드 입력값 필터링 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/js/validation.js)
+### 2022년 10월26일 상품 업로드시 로그인 기능 추가
+### [login.jsp : 상품 업로드 입력값 필터링 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/login/login.jsp)
