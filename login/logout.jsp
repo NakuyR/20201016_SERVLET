@@ -2,5 +2,5 @@
 
 <%
 	session.invalidate();
-	response.sendRedirect("../admin/product_add.jsp");
+	response.sendRedirect("../admin/index_ad.jsp");
 %>
