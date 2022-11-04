@@ -18,4 +18,4 @@
 ### 2022년 10월26일 상품 업로드시 로그인 기능 추가
 ### [login.jsp : 상품 업로드 입력값 필터링 추가](https://github.com/NakuyR/20201016_SERVLET/blob/main/login/login.jsp)
 ### 2022년 11월4일 상품 장바구니 추가
-### [porduct_cart.jsp : 장바구니](https://github.com/NakuyR/20201016_SERVLET/blob/main/cart/porduct_cart.jsp)
+### [product_cart.jsp : 장바구니](https://github.com/NakuyR/20201016_SERVLET/blob/main/cart/product_cart.jsp)
