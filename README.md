@@ -21,3 +21,5 @@
 ### [product_cart.jsp : 장바구니](https://github.com/NakuyR/20201016_SERVLET/blob/main/cart/product_cart.jsp)
 ### 2022년 11월11일 상품 주문하기 추가
 ### [order_info.jsp : 주문하기](https://github.com/NakuyR/20201016_SERVLET/blob/main/order/order_info.jsp)
+### 2022년 11월22일 상품 수정/삭제 추가, MySQL 연동
+### [product_edit.jsp : 수정하기](https://github.com/NakuyR/20201016_SERVLET/blob/main/admin/product_edit.jsp)
