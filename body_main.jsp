@@ -22,7 +22,7 @@
                     rs = pstmt.executeQuery();
                     while(rs.next()){ 
                 %>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="card bg-dark text-white">
                     <img src="../image/product/<%=rs.getString("p_fileName")%>" class="card-img" alt="...">
                     <div class="card-img-overlay">
