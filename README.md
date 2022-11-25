@@ -22,4 +22,8 @@
 ### 2022년 11월11일 상품 주문하기 추가
 ### [order_info.jsp : 주문하기](https://github.com/NakuyR/20201016_SERVLET/blob/main/order/order_info.jsp)
 ### 2022년 11월22일 상품 수정/삭제 추가, MySQL 연동
-### [product_edit.jsp : 수정하기](https://github.com/NakuyR/20201016_SERVLET/blob/main/admin/product_edit.jsp)
+### [product_edit.jsp : 상품수정하기](https://github.com/NakuyR/20201016_SERVLET/blob/main/admin/product_edit.jsp)
+### 2022년 11월 24일 회원가입,수정,삭제 추가
+### [member_edit.jsp : 회원수정](https://github.com/NakuyR/20201016_SERVLET/blob/main/member/memeber_edit.jsp)
+### [member_join.jsp : 회원가입](https://github.com/NakuyR/20201016_SERVLET/blob/main/member/memeber_join.jsp)
+### [member_view.jsp : 회원목록](https://github.com/NakuyR/20201016_SERVLET/blob/main/member/memeber_view.jsp)

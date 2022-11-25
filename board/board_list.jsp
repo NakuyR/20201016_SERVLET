@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page import="mvc.model.Board_dto"%>
 <%
-    String sessionId = (String) session.getId();
+    String sessionId = (String) session.getAttribute("ID");
     List boardList = (List) request.getAttribute("boardlist");
     int total_record = ((Integer) request.getAttribute("total_record")).intValue();
     int pageNum = ((Integer) request.getAttribute("pageNum")).intValue();
@@ -18,10 +18,10 @@
 <title>고객센터 게시판</title>
 <script type="text/javascript">
    function checkForm(){
-       var sID = "<%=session.getId()%>";
+       var sID = "<%=session.getAttribute("ID")%>";
       if (sID==null) {
 	    alert("로그인 해주세요.");
-	    location.href = "../login/management_login.jsp";
+	    location.href = "../login/login_user.jsp";
 	    return false;
    	}
 	location.href = "./BoardWriteForm.do?id=<%=sessionId%>";

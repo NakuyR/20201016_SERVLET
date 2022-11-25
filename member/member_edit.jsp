@@ -6,12 +6,11 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../js/validation.js"></script>
-<title>상품 편집</title>
+<title>회원 수정</title>
 <script type="text/javascript">
     function deleteConfirm(id){
-        if(confirm("해당 상품을 삭제합니다!!") == true)
-            location.href = "product_delete.jsp?id=" + id;
+        if(confirm("해당 회원을 삭제합니다!!") == true)
+            location.href = "member_delete_process.jsp?id=" + id;
         else
             return;
     }
@@ -22,11 +21,11 @@
 %>
 </head>
 <body>
-    <jsp:include page="top_menu_ad.jsp"/>
+    <jsp:include page="../admin/top_menu_ad.jsp"/>
     <div class="jumbotron">
         <div class="container">
             <h1 class="display-3">
-                상품 편집
+                회원 수정
             </h1>
         </div>
     </div>
@@ -34,28 +33,29 @@
     <div class="row" align="center">
         <%@ include file= "../db/db_conn.jsp" %>
         <%
-        String sql= "select * from product";
+        String sql= "select * from member";
         pstmt = conn.prepareStatement(sql);
         rs = pstmt.executeQuery();
         while (rs.next()){
             %>
-        <div class="col-md-4">
-        <img src="../image/product/<%=rs.getString("p_fileName")%>" class="card-img" alt="...">
-        <h3><%=rs.getString("p_name")%></h3>
-        <p>
-            <%=rs.getString("p_description")%>
-            </p>
-            <p>
-                <%=rs.getString("p_UnitPrice")%> 원
-            </p>
+        <div class="col-md-5">
+                <div class="card bg-dark text-white">
+                    <img src="../image/black.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h1 class="card-title"><%=rs.getString("name")%></h1>
+                    </div>
+                </div>
+                <h3>ID : <%=rs.getString("id")%></h3>
+                <p>MAIL : <%=rs.getString("mail")%></p>
+                <p>PHONE : <%=rs.getString("phone")%></p>
             <%
             if (edit.equals("update")){
             %>
-            <a href="product_update.jsp?id=<%=rs.getString("p_id")%>" class="btn btn-success"role="button">수정 &raquo;</a>
+            <a href="../member/member_update.jsp?id=<%=rs.getString("id")%>" class="btn btn-success"role="button">수정 &raquo;</a>
             <%
                 } else if (edit.equals("delete")){
                     %>
-                <a href="#" onclick="deleteConfirm('<%=rs.getString("p_id")%>')" class="btn btn-danger" role="button">삭제 &raquo;></a>
+                <a href="#" onclick="deleteConfirm('<%=rs.getString("id")%>')" class="btn btn-danger" role="button">삭제 &raquo;></a>
                 <%
                 }
                 %>
@@ -68,10 +68,10 @@
             pstmt.close();
             if(conn != null)
             conn.close();
-            %>
+        %>
     </div>
         <hr>
     </div>
-    <jsp:include page="footer_ad.jsp"/>
+    <jsp:include page="../admin/footer_ad.jsp"/>
 </body>
 </html>

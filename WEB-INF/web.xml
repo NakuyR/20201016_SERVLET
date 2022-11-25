@@ -12,7 +12,6 @@
 			<url-pattern>/admin/index_ad.jsp</url-pattern>
             <url-pattern>/admin/product_add.jsp</url-pattern>
             <url-pattern>/admin/product_edit.jsp</url-pattern>
-            <url-pattern>/BoardWriteForm.do</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<description>권한 관리자명</description>
@@ -22,8 +21,8 @@
 	<login-config>
 		<auth-method>FORM</auth-method>
 		<form-login-config>
-			<form-login-page>/login/management_login.jsp</form-login-page>
-			<form-error-page>/login/management_login_failed.jsp</form-error-page>
+			<form-login-page>/login/login.jsp</form-login-page>
+			<form-error-page>/login/login_failed.jsp</form-error-page>
 		</form-login-config>
 	</login-config>
     <servlet>

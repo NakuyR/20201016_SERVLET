@@ -15,7 +15,7 @@
 
 <title>Welcome! 개인 쇼핑몰 사이트입니다.</title>
 <script>
-    window.open("popup/popup1.jsp","popup","width=365, height=250, left=0, top=0")
+    window.open("../popup/popup1.jsp","popup","width=365, height=250, left=0, top=0")
 </script>
 </head>
 <body>	<%-- JSP 주석 처리 --%>
