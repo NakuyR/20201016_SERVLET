@@ -18,7 +18,6 @@
         String address = request.getParameter("address");
         java.text.SimpleDateFormat formatter = new java.text.SimpleDateFormat("yyyy/MM/dd(HH:mm:ss)");
         String regist_day = formatter.format(new java.util.Date());
-        out.println(id);
 
     String sql = "insert into member values(?,?,?,?,?,?,?,?,?)";
     pstmt = conn.prepareStatement(sql);

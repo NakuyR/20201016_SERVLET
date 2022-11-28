@@ -29,7 +29,7 @@
  <div class="container">
       <div class="row">
 	    <div class="col-md-8">
-	    <form name="member" action="member_update_process.jsp" class="form-horizontal" method="post">
+	    <form name="member" action="../member/member_update_process.jsp?userid=<%=rs.getString("id")%>" class="form-horizontal" method="post">
 	    <div class="form-group row">
 		<label class="col-sm-2">회원 이름</label>
 		<div class="col-sm-3">
@@ -39,7 +39,7 @@
 	    <div class="form-group row">
 		<label class="col-sm-2">아이디</label>
 		<div class="col-sm-3">
-			<input type="text" id="id" name="id" class="form-control" value="<%=rs.getString("id")%>">
+			<input type="text" id="id" name="id" class="form-control" value="<%=rs.getString("id")%>" readonly>
 		</div>
 	    </div>
 	    <div class="form-group row">
@@ -92,12 +92,6 @@
 </div>
 <%
 	}
-	if (rs != null)
-		rs.close();
-		if (pstmt != null)
-			pstmt.close();
-	if (conn != null)
-		conn.close();
  %>
  <hr>
  <jsp:include page="../admin/footer_ad.jsp" />

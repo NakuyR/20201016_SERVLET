@@ -21,7 +21,7 @@
 		ArrayList<Product> cartList = (ArrayList<Product>) session.getAttribute("cartlist");
 		Product goodsQnt = new Product();
 if(cartList != null){
-	for (int i = 0; i < cartList.size(); i++) { // 상품리스트 하나씩 출력하기
+	for (int i = 0; i < cartList.size(); i++) { 
 		goodsQnt = cartList.get(i);
 		if (goodsQnt.getProductId().equals(id)) {
 			cartList.remove(goodsQnt);

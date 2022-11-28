@@ -15,7 +15,7 @@
     </div>
     
     <div>
-        <img src="../image/logo.png" class="img-fluid" alt="main_image">
+        <img src="../image/logo/logo.png" class="img-fluid" alt="main_image">
     </div>
     
     <div class="container">

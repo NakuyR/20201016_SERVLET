@@ -12,7 +12,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <%
-	String cartId = session.getId(); // 세션 정보 얻기
+	String cartId = session.getId(); 
 %>
 <title>장바구니</title>
 </head>
@@ -46,7 +46,7 @@
 				ArrayList<Product> cartList = (ArrayList<Product>) session.getAttribute("cartlist");
 				if (cartList == null)
 					cartList = new ArrayList<Product>();
-					for (int i = 0; i < cartList.size(); i++) { // 상품리스트 하나씩 출력하기
+					for (int i = 0; i < cartList.size(); i++) { 
 					Product product = cartList.get(i);
 					int total = product.getUnitPrice() * product.getQuantity();
 					sum = sum + total;

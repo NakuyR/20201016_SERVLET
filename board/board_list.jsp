@@ -18,8 +18,8 @@
 <title>고객센터 게시판</title>
 <script type="text/javascript">
    function checkForm(){
-       var sID = "<%=session.getAttribute("ID")%>";
-      if (sID==null) {
+       var sID = "<%=sessionId%>";
+      if (sID=="null") {
 	    alert("로그인 해주세요.");
 	    location.href = "../login/login_user.jsp";
 	    return false;
@@ -103,7 +103,6 @@
 </div>
 <jsp:include page="../footer.jsp" />
 <p>
-<%=sessionId%>
 </p>
 </body>
 </html>

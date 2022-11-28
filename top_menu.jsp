@@ -15,13 +15,17 @@
     </div>
     
     <div>
-        <img src="../image/logo.png" class="img-fluid" alt="main_image">
+        <img src="../image/logo/logo.png" class="img-fluid" alt="main_image">
     </div>
     
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="../index.jsp">상품목록(기본 홈)</a>
+            <% if (session.getAttribute("ID")!=null){ %>
+            <a class="navbar-brand" href="../login/logout_user.jsp">로그아웃</a>
+            <% } else { %>
             <a class="navbar-brand" href="../login/login_user.jsp">로그인</a>
+<% } %> 
             <a class="navbar-brand" href="/BoardListAction.do?pageNum=1">게시판(고객센터)</a>
             <a class="navbar-brand" href="../admin/index_ad.jsp">관리자모드</a>
         </div>

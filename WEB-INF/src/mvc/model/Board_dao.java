@@ -46,7 +46,7 @@ public class Board_dao{
     }
     return x;
 }
-	//board 테이블의 레코드 가져오기
+
 	public ArrayList<Board_dto> getBoardList(int page, int limit, String items, String text) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -104,7 +104,7 @@ public class Board_dao{
 		}
 		return null;
 	}
-	//member 테이블에서 인증된 id의 사용자명 가져오기
+
 	public String getLoginNameById(String id) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -139,7 +139,8 @@ public class Board_dao{
 		}
 		return null;
 	}
-	//board 테이블에 새로운 글 삽입하기
+
+    
 	public void insertBoard(Board_dto board)  {
 	
 		Connection conn = null;
@@ -173,7 +174,8 @@ public class Board_dao{
 			}		
 		}		
 	} 
-	//선택된 글의 조회수 증가하기
+
+    
 	public void updateHit(int num) {
 
 		Connection conn = null;
@@ -213,7 +215,8 @@ public class Board_dao{
 			}			
 		}
 	}
-	//선택된 글 상세 내용 가져오기
+
+    
 	public Board_dto getBoardByNum(int num, int page) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -258,7 +261,8 @@ public class Board_dao{
 		}
 		return null;
 	}
-	//선택된 글 내용 수정하기
+
+    
 	public void updateBoard(Board_dto board) {
 
 		Connection conn = null;
@@ -293,7 +297,8 @@ public class Board_dao{
 			}		
 		}
 	} 
-	//선택된 글 삭제하기
+
+    
 	public void deleteBoard(int num) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;		
